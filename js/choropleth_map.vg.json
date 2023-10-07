@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Average Salary in USD for Each Country (2020 to 2023)",
+  "width": 800,
+  "height": 400,
+  "background": "lightblue",
+  "projection": {"type": "equirectangular"},
+  "data": {
+    "url": "https://raw.githubusercontent.com/zhenxu-1171/Homework-Week-9/main/ne_110m.json",
+    "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
+  },
+  
+  "transform": [
+    {
+      "lookup": "properties.NAME",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/zhenxu-1171/Homework-Week-9/main/avg.csv"
+        },
+        "key": "Company Location",
+        "fields": ["Salary in USD"]
+      }
+    },
+    {"calculate": "datum['Salary in USD'] + 0", "as": "Salary in USD"}
+  ],
+  "layer":[
+  {"mark": {"type": "geoshape"},
+  "encoding": {
+    "color": {
+      "field": "Salary in USD",
+      "type": "quantitative",
+      "scale": {"type": "linear", "scheme": "greens"}
+    },
+    "tooltip": [
+      {"field": "properties.NAME", "type": "nominal", "title": "Country"},
+      {"field": "Salary in USD", "type": "quantitative", "format": ".2f"}
+    ]
+  }},
+  {
+      "data": {
+        "url": "https://raw.githubusercontent.com/zhenxu-1171/Homework-Week-9/main/ne_110m.json",
+        "format": {"type": "topojson", "feature": "ne_110m_graticules_30"}
+      },
+      "mark": {"type": "geoshape", "stroke": "grey", "opacity": "0.3"}
+    }]
+}

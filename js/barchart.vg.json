@@ -1,0 +1,67 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/zhenxu-1171/Homework-Week10/main/data/avg.csv"},
+      "width":"container",
+    "title":{"text":"Average Salary in USD for each Country",
+    "anchor": null},
+    "params": [{
+      "name": "Region_Selection",
+      "bind":{
+        "input": "select",
+        "options":[
+          null,
+          "Africa",
+          "Asia",
+          "Europe",
+          "Middle East",
+          "North America",
+          "Oceania",
+          "South America"
+        ],
+        "labels": [
+          "Show All Region",
+          "Africa",
+          "Asia",
+          "Europe",
+          "Middle East",
+          "North America",
+          "Oceania",
+          "South America"
+        ],
+        "name": "Region Selection: "
+      }
+    }],
+    "encoding": {
+      "y": {"field": "Company Location", "type": "nominal"},
+      "x": {"field": "Salary in USD", "type": "quantitative", "scale":{"domain":[0, 350000]}, "axis":{"tickCount":0, "title":"Average Salary in USD"}}
+    },
+    "transform": [
+      {"filter": "Region_Selection == null || datum['Region'] == Region_Selection"}
+    ],
+    "layer": [{
+      "mark": "bar",
+      "encoding": {
+        "color":{"value":"green"},
+        "tooltip":[
+          {"field": "Company Location", "type": "nominal", "title":"Company Location"},
+          {"field": "Region", "type": "nominal", "title":"Region"},
+          {"field": "Salary in USD", "type": "quantitative", "title":"Average Salary in USD"}
+        ]
+      }
+    }, 
+    {
+      "mark": {
+        "type": "text", 
+        "align": "left", 
+        "xOffset": 5, 
+        "aria": false
+      
+      },
+      "encoding": {
+        "text": {"field": "Salary in USD", 
+        "type": "quantitative",
+        "format":".2f"}
+      }
+    }]
+  }

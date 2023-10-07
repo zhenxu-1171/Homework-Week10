@@ -1,73 +1,73 @@
-Company Location,Salary in USD
-Algeria,100000.0
-American Samoa,34026.5
-Andorra,50745.0
-Argentina,62000.0
-Armenia,50000.0
-Australia,122133.61904761905
-Austria,71354.83333333333
-Bahamas,45555.0
-Belgium,76864.75
-Bosnia and Herzegovina,120000.0
-Brazil,58569.117647058825
-Canada,135117.8827586207
-Central African Rep.,49216.0
-Chile,40038.0
-China,100000.0
-Colombia,73903.66666666667
-Croatia,76726.0
-Czechia,69478.66666666667
-Denmark,49402.6
-Ecuador,16000.0
-Egypt,22800.0
-Estonia,45993.444444444445
-Finland,68519.33333333333
-France,80275.11111111111
-Germany,91143.41428571429
-Ghana,27000.0
-Greece,50208.6
-Honduras,20000.0
-Hong Kong,65058.0
-Hungary,26709.5
-India,35136.67346938775
-Indonesia,34208.0
-Iran,100000.0
-Iraq,100000.0
-Ireland,115188.28571428571
-Israel,217332.0
-Italy,49997.07692307692
-Japan,110821.625
-Kenya,65000.0
-Latvia,58302.5
-Lithuania,94812.0
-Luxembourg,60914.0
-Malaysia,40000.0
-Malta,28369.0
-Mexico,94864.63636363637
-Moldova,18000.0
-Netherlands,83586.70588235294
-New Zealand,125000.0
-Nigeria,65750.0
-Norway,88462.0
-Pakistan,30000.0
-Philippines,32840.0
-Poland,55457.57142857143
-Portugal,46138.470588235294
-Puerto Rico,167500.0
-Qatar,300000.0
-Romania,56992.0
-Russia,88409.16666666667
-Saudi Arabia,134999.0
-Singapore,62783.0
-Slovenia,62956.0
-South Africa,34482.0
-South Korea,47000.0
-Spain,60109.490909090906
-Sweden,98791.33333333333
-Switzerland,88769.83333333333
-Thailand,22971.333333333332
-Turkey,22313.6
-Ukraine,72666.66666666667
-United Arab Emirates,100000.0
-United Kingdom,109766.23208191126
-United States of America,158183.82198605116
+Company Location,Salary in USD,Region
+Algeria,100000,Africa
+American Samoa,34026.5,Oceania
+Andorra,50745,Europe
+Argentina,62000,South America
+Armenia,50000,Asia
+Australia,122133.619,Oceania
+Austria,71354.83333,Europe
+Bahamas,45555,North America
+Belgium,76864.75,Europe
+Bosnia and Herzegovina,120000,Europe
+Brazil,58569.11765,South America
+Canada,135117.8828,North America
+Central African Rep.,49216,Africa
+Chile,40038,South America
+China,100000,Asia
+Colombia,73903.66667,South America
+Croatia,76726,Europe
+Czechia,69478.66667,Europe
+Denmark,49402.6,Europe
+Ecuador,16000,South America
+Egypt,22800,Africa
+Estonia,45993.44444,Europe
+Finland,68519.33333,Europe
+France,80275.11111,Europe
+Germany,91143.41429,Europe
+Ghana,27000,Africa
+Greece,50208.6,Europe
+Honduras,20000,North America
+Hong Kong,65058,Asia
+Hungary,26709.5,Europe
+India,35136.67347,Asia
+Indonesia,34208,Asia
+Iran,100000,Middle East
+Iraq,100000,Middle East
+Ireland,115188.2857,Europe
+Israel,217332,Middle East
+Italy,49997.07692,Europe
+Japan,110821.625,Asia
+Kenya,65000,Africa
+Latvia,58302.5,Europe
+Lithuania,94812,Europe
+Luxembourg,60914,Europe
+Malaysia,40000,Asia
+Malta,28369,Europe
+Mexico,94864.63636,North America
+Moldova,18000,Europe
+Netherlands,83586.70588,Europe
+New Zealand,125000,Oceania
+Nigeria,65750,Africa
+Norway,88462,Europe
+Pakistan,30000,Asia
+Philippines,32840,Asia
+Poland,55457.57143,Europe
+Portugal,46138.47059,Europe
+Puerto Rico,167500,North America
+Qatar,300000,Middle East
+Romania,56992,Europe
+Russia,88409.16667,Europe
+Saudi Arabia,134999,Middle East
+Singapore,62783,Asia
+Slovenia,62956,Europe
+South Africa,34482,Africa
+South Korea,47000,Asia
+Spain,60109.49091,Europe
+Sweden,98791.33333,Europe
+Switzerland,88769.83333,Europe
+Thailand,22971.33333,Asia
+Turkey,22313.6,Asia
+Ukraine,72666.66667,Europe
+United Arab Emirates,100000,Middle East
+United Kingdom,109766.2321,Europe
+United States of America,158183.822,North America
